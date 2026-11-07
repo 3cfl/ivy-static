@@ -4,20 +4,19 @@ Upload this entire folder to a static HTTPS host and open index.html or the
 folder URL ending in /. It also works on localhost HTTP. It discovers its
 base path automatically and uses hash navigation, with no SPA rewrite needed.
 
-Games load in an isolated iframe from https://games.ivy.rest/k/index.html, the
-same live library as ivy.rest, including the ivy, cloud, lumin, ugs and gn-math
-sources. Lumin and cloud games run on the hosted runner.
-If games.ivy.rest is unreachable, the library loads through the proxy instead.
-The lumin source is unavailable in that mode; the others keep working.
+Games load in an isolated iframe from:
+https://games.ivy.rest/static/games/index.html
+The hosted library provides Lumin, UGS and GN-Math. Game HTML, thumbnails and
+catalogues are not included in this smaller download. Games require access to
+the hosted service. Existing local game-save messages remain bound to the
+expected iframe source and exact game origin; saves stay on your static host.
 
-AI, chat, billing, developers, links, settings and sign-in are the real ivy.rest
-app, loaded once through the bundled proxy into a shared frame with its own
-sidebar and toolbars hidden. They update whenever ivy.rest does. Settings sync
-back to this page. Payment pages open outside the proxy in a new tab.
-
-Proxy engines, WASM and transports are bundled locally. The relay list comes from
-the main repo first, then the local wisp.json, so updating the repo list reaches
-every copy. Blocked or dead relays are skipped automatically.
+tejmarcs/teiloivartlu, their WASM and transports remain bundled locally.
+Edit wisp.json to change the ordered WebSocket Wisp server list. API base is
+https://ivy.rest. Account, community chat, billing and links open through the local proxy in
+internal Ivy tabs. They require their normal Ivy sign-in. Proxy sessions are
+separate from direct ivy.rest sessions; sign-in and payment providers may
+restrict proxied browsers. No authentication checks are disabled.
 
 This edition uses classic browser scripts, including transport and worker
 startup. No browser ES-module loader is needed for the bundled app. Websites
@@ -32,5 +31,6 @@ Keep this folder structure intact. No Node process, npm install, private key,
 server source, account database or runtime secret is part of this deployment.
 Original dependency license notices are retained in licenses/.
 
-Google sign-in runs on this page, not inside the proxy, so this host must be
-listed in Firebase authorized domains. The proxy session then stays signed in.
+The outer static dashboard does not inherit a proxied account session. Account
+tools and community chat run inside their proxy tabs. Browser sign-in and
+OAuth/payment flows have not been interactively verified.
