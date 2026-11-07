@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 200" width="600" height="200" preserveAspectRatio="none">
+<defs>
+<linearGradient id="bf-w" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".22"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
+<filter id="bf-blur" x="-10%" y="-50%" width="120%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+<g filter="url(#bf-blur)" style="mix-blend-mode: soft-light">
+<path fill="url(#bf-w)" d="M-50 120 C 100 60, 220 170, 360 100 S 560 60, 660 110 L 660 150 C 540 110, 420 190, 280 150 S 60 120, -50 160 Z"><animate attributeName="d" dur="10s" repeatCount="indefinite" values="M-50 120 C 100 60, 220 170, 360 100 S 560 60, 660 110 L 660 150 C 540 110, 420 190, 280 150 S 60 120, -50 160 Z;M-50 100 C 120 160, 240 70, 380 130 S 560 150, 660 90 L 660 130 C 520 180, 400 110, 260 170 S 60 160, -50 140 Z;M-50 120 C 100 60, 220 170, 360 100 S 560 60, 660 110 L 660 150 C 540 110, 420 190, 280 150 S 60 120, -50 160 Z"/></path>
+<path fill="url(#bf-w)" d="M-50 40 C 120 0, 260 90, 400 40 S 580 10, 660 50 L 660 80 C 560 50, 420 110, 300 80 S 80 50, -50 80 Z"><animate attributeName="d" dur="13s" repeatCount="indefinite" values="M-50 40 C 120 0, 260 90, 400 40 S 580 10, 660 50 L 660 80 C 560 50, 420 110, 300 80 S 80 50, -50 80 Z;M-50 60 C 100 90, 280 20, 420 70 S 580 80, 660 30 L 660 64 C 540 100, 420 50, 280 100 S 70 90, -50 96 Z;M-50 40 C 120 0, 260 90, 400 40 S 580 10, 660 50 L 660 80 C 560 50, 420 110, 300 80 S 80 50, -50 80 Z"/></path>
+</g>
+<rect x="-200" y="0" width="160" height="200" fill="url(#bf-w)" transform="skewX(-18)" opacity=".7"><animate attributeName="x" values="-260;760;760" keyTimes="0;.45;1" dur="8s" repeatCount="indefinite"/></rect>
+</svg>

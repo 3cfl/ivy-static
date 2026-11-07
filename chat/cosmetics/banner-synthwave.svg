@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 200" width="600" height="200" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="bw-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d0221"/><stop offset=".55" stop-color="#3b0a5c"/><stop offset=".8" stop-color="#a1235e"/></linearGradient>
+<linearGradient id="bw-sun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe66d"/><stop offset=".55" stop-color="#ff7a59"/><stop offset="1" stop-color="#ff2e93"/></linearGradient>
+<clipPath id="bw-sunclip"><rect x="0" y="0" width="600" height="68"/><rect x="0" y="72" width="600" height="7"/><rect x="0" y="83" width="600" height="6"/><rect x="0" y="93" width="600" height="5"/><rect x="0" y="102" width="600" height="4"/><rect x="0" y="110" width="600" height="3"/></clipPath>
+<linearGradient id="bw-grid" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff2e93" stop-opacity=".2"/><stop offset="1" stop-color="#ff2e93"/></linearGradient>
+<filter id="bw-glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="600" height="200" fill="url(#bw-sky)"/>
+<circle cx="300" cy="92" r="56" fill="url(#bw-sun)" clip-path="url(#bw-sunclip)" filter="url(#bw-glow)"/>
+<path d="M0 120 L70 96 L120 112 L180 84 L240 116 L300 120 L360 116 L420 88 L480 110 L530 94 L600 120 Z" fill="#12052a" stroke="#ff2e93" stroke-width="1.2" stroke-opacity=".7"/>
+<rect x="0" y="120" width="600" height="80" fill="#0d0221"/>
+<g stroke="url(#bw-grid)" stroke-width="1.2" fill="none" filter="url(#bw-glow)">
+<path d="M300 120 L-300 200 M300 120 L-100 200 M300 120 L100 200 M300 120 L300 200 M300 120 L500 200 M300 120 L700 200 M300 120 L900 200"/>
+<g><path d="M0 128 H600 M0 140 H600 M0 156 H600 M0 178 H600"/><animateTransform attributeName="transform" type="translate" values="0 0;0 10" dur="1.2s" repeatCount="indefinite"/></g>
+</g>
+</svg>

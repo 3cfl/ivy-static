@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 160" width="160" height="160">
+<defs>
+<linearGradient id="iv-l" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#bbf7d0"/><stop offset=".55" stop-color="#22c55e"/><stop offset="1" stop-color="#14532d"/></linearGradient>
+<filter id="iv-sh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="1.2" stdDeviation="1.2" flood-color="#000" flood-opacity=".5"/></filter>
+</defs>
+<circle cx="80" cy="80" r="55.5" fill="none" stroke="#14532d" stroke-width="5"/>
+<path d="M30 92 C 26 60, 44 34, 70 26 C 96 18, 124 30, 134 56 C 142 80, 136 104, 118 120 C 100 136, 70 140, 50 128" fill="none" stroke="#15803d" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M30 92 C 26 60, 44 34, 70 26 C 96 18, 124 30, 134 56 C 142 80, 136 104, 118 120 C 100 136, 70 140, 50 128" fill="none" stroke="#bbf7d0" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="18 400"><animate attributeName="stroke-dashoffset" values="20;-380" dur="4.5s" repeatCount="indefinite"/></path>
+<g filter="url(#iv-sh)">
+<g transform="translate(46 38) rotate(-140)"><path d="M0 0 C 5 -6, 15 -6, 20 0 C 15 6, 5 6, 0 0 Z" fill="url(#iv-l)"><animateTransform attributeName="transform" type="rotate" values="-8;10;-8" dur="4s" repeatCount="indefinite"/></path></g>
+<g transform="translate(92 22) rotate(-70)"><path d="M0 0 C 5 -6, 15 -6, 20 0 C 15 6, 5 6, 0 0 Z" fill="url(#iv-l)"><animateTransform attributeName="transform" type="rotate" values="6;-10;6" dur="4.6s" repeatCount="indefinite"/></path></g>
+<g transform="translate(130 46) rotate(-20)"><path d="M0 0 C 5 -6, 15 -6, 20 0 C 15 6, 5 6, 0 0 Z" fill="url(#iv-l)"><animateTransform attributeName="transform" type="rotate" values="-10;8;-10" dur="5s" repeatCount="indefinite"/></path></g>
+<g transform="translate(138 88) rotate(30)"><path d="M0 0 C 4 -5, 12 -5, 16 0 C 12 5, 4 5, 0 0 Z" fill="url(#iv-l)"><animateTransform attributeName="transform" type="rotate" values="8;-8;8" dur="4.2s" repeatCount="indefinite"/></path></g>
+<g transform="translate(118 122) rotate(70)"><path d="M0 0 C 5 -6, 15 -6, 20 0 C 15 6, 5 6, 0 0 Z" fill="url(#iv-l)"><animateTransform attributeName="transform" type="rotate" values="-6;10;-6" dur="4.8s" repeatCount="indefinite"/></path></g>
+<g transform="translate(30 92) rotate(160)"><path d="M0 0 C 4 -5, 12 -5, 16 0 C 12 5, 4 5, 0 0 Z" fill="url(#iv-l)"><animateTransform attributeName="transform" type="rotate" values="10;-6;10" dur="4.4s" repeatCount="indefinite"/></path></g>
+<g transform="translate(52 128) rotate(120)"><path d="M0 0 C 4 -5, 12 -5, 16 0 C 12 5, 4 5, 0 0 Z" fill="url(#iv-l)"><animateTransform attributeName="transform" type="rotate" values="-8;8;-8" dur="5.2s" repeatCount="indefinite"/></path></g>
+</g>
+</svg>

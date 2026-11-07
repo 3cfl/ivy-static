@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 160" width="160" height="160">
+<defs>
+<linearGradient id="ry-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff3c4"/><stop offset=".3" stop-color="#d4a017"/><stop offset=".55" stop-color="#fde68a"/><stop offset=".8" stop-color="#8a6116"/><stop offset="1" stop-color="#f5c542"/><animateTransform attributeName="gradientTransform" type="rotate" values="0 .5 .5;360 .5 .5" dur="5s" repeatCount="indefinite"/></linearGradient>
+<linearGradient id="ry-c" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3c4"/><stop offset=".5" stop-color="#f5c542"/><stop offset="1" stop-color="#a16207"/></linearGradient>
+<linearGradient id="ry-shine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".9"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
+<clipPath id="ry-cc"><path d="M54 30 L50 6 L64 18 L80 0 L96 18 L110 6 L106 30 Z"/></clipPath>
+<filter id="ry-sh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity=".55"/></filter>
+</defs>
+<circle cx="80" cy="80" r="56" fill="none" stroke="url(#ry-g)" stroke-width="7"/>
+<circle cx="80" cy="80" r="51.5" fill="none" stroke="#fde68a" stroke-width="1" stroke-dasharray="2 4" opacity=".6"/>
+<g filter="url(#ry-sh)">
+<path d="M54 30 L50 6 L64 18 L80 0 L96 18 L110 6 L106 30 Z" fill="url(#ry-c)" stroke="#8a6116" stroke-width="1"/>
+<g clip-path="url(#ry-cc)"><rect x="20" y="-4" width="18" height="40" fill="url(#ry-shine)" transform="skewX(-20)"><animate attributeName="x" values="20;140;140" keyTimes="0;.5;1" dur="3.4s" repeatCount="indefinite"/></rect></g>
+<circle cx="80" cy="20" r="3.4" fill="#dc2626" stroke="#fde68a" stroke-width="1"/>
+<circle cx="64" cy="23" r="2.4" fill="#2563eb" stroke="#fde68a" stroke-width=".8"/>
+<circle cx="96" cy="23" r="2.4" fill="#16a34a" stroke="#fde68a" stroke-width=".8"/>
+</g>
+<g stroke="#fde68a" stroke-width="1">
+<circle cx="80" cy="136" r="4.2" fill="#dc2626"><animate attributeName="fill" values="#dc2626;#fca5a5;#dc2626" dur="2.4s" repeatCount="indefinite"/></circle>
+<circle cx="24" cy="80" r="3.4" fill="#2563eb"><animate attributeName="fill" values="#2563eb;#93c5fd;#2563eb" dur="2.4s" begin="-.8s" repeatCount="indefinite"/></circle>
+<circle cx="136" cy="80" r="3.4" fill="#16a34a"><animate attributeName="fill" values="#16a34a;#86efac;#16a34a" dur="2.4s" begin="-1.6s" repeatCount="indefinite"/></circle>
+</g>
+</svg>

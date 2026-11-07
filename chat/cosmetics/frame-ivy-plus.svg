@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 160" width="160" height="160">
+<defs>
+<linearGradient id="pf-ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff3c4"/><stop offset=".3" stop-color="#fcd34d"/><stop offset=".55" stop-color="#6ee7b7"/><stop offset=".8" stop-color="#10b981"/><stop offset="1" stop-color="#fde68a"/><animateTransform attributeName="gradientTransform" type="rotate" values="0 .5 .5;360 .5 .5" dur="7s" repeatCount="indefinite"/></linearGradient>
+<linearGradient id="pf-leaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#bbf7d0"/><stop offset="1" stop-color="#059669"/></linearGradient>
+<linearGradient id="pf-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff7d6"/><stop offset=".5" stop-color="#fcd34d"/><stop offset="1" stop-color="#d97706"/></linearGradient>
+<filter id="pf-glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<path id="pf-orbit" d="M80 18 a62 62 0 1 1 -0.01 0"/>
+<g id="pf-ivy"><path d="M0 -7 C 6 -6, 8 1, 0 7 C -8 1, -6 -6, 0 -7 Z" fill="url(#pf-leaf)"/><path d="M0 -5 V5" stroke="#ecfdf5" stroke-width=".8" opacity=".7"/></g>
+<path id="pf-star" d="M0 -4 C .5 -1, 1 -.5, 4 0 C 1 .5, .5 1, 0 4 C -.5 1, -1 .5, -4 0 C -1 -.5, -.5 -1, 0 -4 Z" fill="#fff7d6"/>
+</defs>
+<circle cx="80" cy="80" r="56" fill="none" stroke="url(#pf-ring)" stroke-width="5" filter="url(#pf-glow)"/>
+<circle cx="80" cy="80" r="64" fill="none" stroke="#fcd34d" stroke-width="1.2" stroke-dasharray="2 7" stroke-linecap="round" opacity=".75"><animateTransform attributeName="transform" type="rotate" values="0 80 80;-360 80 80" dur="30s" repeatCount="indefinite"/></circle>
+<circle cx="80" cy="80" r="51" fill="none" stroke="#ecfdf5" stroke-width=".8" opacity=".35"/>
+<g filter="url(#pf-glow)">
+<use href="#pf-ivy"><animateMotion dur="12s" repeatCount="indefinite" rotate="auto"><mpath href="#pf-orbit"/></animateMotion></use>
+<use href="#pf-ivy"><animateMotion dur="12s" begin="-4s" repeatCount="indefinite" rotate="auto"><mpath href="#pf-orbit"/></animateMotion></use>
+<use href="#pf-ivy"><animateMotion dur="12s" begin="-8s" repeatCount="indefinite" rotate="auto"><mpath href="#pf-orbit"/></animateMotion></use>
+</g>
+<g transform="translate(80 17)" filter="url(#pf-glow)">
+<path d="M-12 4 L-9 -6 L-4 0 L0 -9 L4 0 L9 -6 L12 4 Z" fill="url(#pf-gold)" stroke="#fff7d6" stroke-width=".8" stroke-linejoin="round"/>
+<rect x="-12" y="4" width="24" height="4" rx="1.5" fill="url(#pf-gold)"/>
+<circle cx="0" cy="-1" r="2.2" fill="#6ee7b7"><animate attributeName="r" values="2;2.8;2" dur="2.4s" repeatCount="indefinite"/></circle>
+<animateTransform attributeName="transform" type="translate" values="80 17;80 15;80 17" dur="3s" repeatCount="indefinite"/>
+</g>
+<g>
+<use href="#pf-star" transform="translate(26 54)"><animateTransform attributeName="transform" type="scale" values="0;1.1;0;0" keyTimes="0;.2;.45;1" dur="2.6s" additive="sum" repeatCount="indefinite"/></use>
+<use href="#pf-star" transform="translate(138 100)"><animateTransform attributeName="transform" type="scale" values="0;0;1;0" keyTimes="0;.35;.6;.85" dur="3s" additive="sum" repeatCount="indefinite"/></use>
+<use href="#pf-star" transform="translate(44 138)"><animateTransform attributeName="transform" type="scale" values="0;.9;0;0" keyTimes="0;.25;.5;1" dur="3.4s" begin="-1.2s" additive="sum" repeatCount="indefinite"/></use>
+</g>
+</svg>

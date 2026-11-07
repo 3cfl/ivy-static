@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 200" width="600" height="200" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="bd-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e1442"/><stop offset=".45" stop-color="#7a2f8a"/><stop offset=".75" stop-color="#f06a5a"/><stop offset="1" stop-color="#ffb46b"/></linearGradient>
+<radialGradient id="bd-sun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff3c4"/><stop offset=".4" stop-color="#ffcf6b"/><stop offset="1" stop-color="#ff7a45" stop-opacity="0"/></radialGradient>
+<linearGradient id="bd-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a1f4f"/><stop offset="1" stop-color="#140b24"/></linearGradient>
+</defs>
+<rect width="600" height="200" fill="url(#bd-sky)"/>
+<circle cx="300" cy="136" r="70" fill="url(#bd-sun)"><animate attributeName="cy" values="130;140;130" dur="12s" repeatCount="indefinite"/></circle>
+<circle cx="300" cy="136" r="26" fill="#fff0b8"><animate attributeName="cy" values="130;140;130" dur="12s" repeatCount="indefinite"/></circle>
+<path d="M0 140 L60 108 L110 128 L170 92 L230 126 L280 110 L330 132 L390 96 L450 124 L510 104 L560 122 L600 112 L600 150 L0 150 Z" fill="#4a2366" opacity=".85"/>
+<path d="M0 150 L50 128 L120 146 L190 118 L250 144 L320 126 L380 148 L440 120 L520 146 L600 130 L600 156 L0 156 Z" fill="#2b1442"/>
+<rect x="0" y="154" width="600" height="46" fill="url(#bd-water)"/>
+<g fill="#ffd38a">
+<rect x="262" y="162" width="76" height="2" rx="1" opacity=".8"><animate attributeName="width" values="76;60;76" dur="3s" repeatCount="indefinite"/><animate attributeName="x" values="262;270;262" dur="3s" repeatCount="indefinite"/></rect>
+<rect x="276" y="172" width="48" height="2" rx="1" opacity=".6"><animate attributeName="width" values="48;62;48" dur="3.6s" repeatCount="indefinite"/><animate attributeName="x" values="276;269;276" dur="3.6s" repeatCount="indefinite"/></rect>
+<rect x="288" y="182" width="24" height="2" rx="1" opacity=".45"><animate attributeName="width" values="24;34;24" dur="2.8s" repeatCount="indefinite"/><animate attributeName="x" values="288;283;288" dur="2.8s" repeatCount="indefinite"/></rect>
+</g>
+<g fill="none" stroke="#1a0c2c" stroke-width="2" stroke-linecap="round"><path d="M0 -4 q 5 -5 10 0 q 5 -5 10 0"><animateMotion dur="18s" repeatCount="indefinite" path="M-30 60 C 150 40, 300 70, 640 40"/></path><path d="M0 -4 q 4 -4 8 0 q 4 -4 8 0"><animateMotion dur="18s" begin="-1.5s" repeatCount="indefinite" path="M-30 70 C 150 50, 300 80, 640 50"/></path></g>
+</svg>

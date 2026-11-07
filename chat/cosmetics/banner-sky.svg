@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 200" width="600" height="200" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="bs-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e6fc2"/><stop offset=".7" stop-color="#6fb8ef"/><stop offset="1" stop-color="#bfe3ff"/></linearGradient>
+<radialGradient id="bs-sun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fffbe6"/><stop offset=".25" stop-color="#fff2b0" stop-opacity=".8"/><stop offset="1" stop-color="#fff2b0" stop-opacity="0"/></radialGradient>
+<filter id="bs-soft" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="2.2"/></filter>
+<g id="bs-cloud"><ellipse cx="0" cy="0" rx="46" ry="16"/><ellipse cx="-24" cy="-8" rx="22" ry="16"/><ellipse cx="10" cy="-16" rx="26" ry="20"/><ellipse cx="34" cy="-4" rx="18" ry="13"/></g>
+</defs>
+<rect width="600" height="200" fill="url(#bs-sky)"/>
+<circle cx="520" cy="44" r="80" fill="url(#bs-sun)"><animate attributeName="r" values="74;86;74" dur="5s" repeatCount="indefinite"/></circle>
+<g fill="#ffffff" opacity=".55" filter="url(#bs-soft)"><use href="#bs-cloud" transform="translate(120 70) scale(.7)"/><use href="#bs-cloud" transform="translate(420 96) scale(.6)"/><animateTransform attributeName="transform" type="translate" values="-80 0;680 0" dur="70s" repeatCount="indefinite"/></g>
+<g fill="#ffffff" opacity=".8" filter="url(#bs-soft)"><use href="#bs-cloud" transform="translate(40 130)"/><use href="#bs-cloud" transform="translate(330 150) scale(1.2)"/><animateTransform attributeName="transform" type="translate" values="-140 0;660 0" dur="46s" repeatCount="indefinite"/></g>
+<g fill="#ffffff" filter="url(#bs-soft)"><use href="#bs-cloud" transform="translate(200 182) scale(1.7)"/><use href="#bs-cloud" transform="translate(560 176) scale(1.5)"/><animateTransform attributeName="transform" type="translate" values="-260 0;620 0" dur="30s" repeatCount="indefinite"/></g>
+</svg>

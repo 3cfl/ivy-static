@@ -1,0 +1,15 @@
+{
+  "apiBase": "https://ivy.rest",
+  "gamesIframe": "https://games.ivy.rest/static/games/index.html",
+  "games": "hosted on ivy; no local game catalogue, thumbnails or HTML payloads",
+  "proxyEngines": "bundled locally",
+  "hosting": "static HTTPS, relative paths, runtime base path, hash navigation",
+  "centralFeatures": "account, community chat, billing, developers and links use internal proxy tabs",
+  "scriptFormat": "classic scripts and classic worker/transport startup",
+  "built": "2026-11-07",
+  "entries": [
+    "index.html",
+    "index.xml",
+    "index.svg"
+  ]
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 200" width="600" height="200" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="br-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5a0f2e"/><stop offset=".5" stop-color="#b8285e"/><stop offset="1" stop-color="#f58ab3"/></linearGradient>
+<radialGradient id="br-bokeh" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffd6e7" stop-opacity=".7"/><stop offset=".7" stop-color="#ffb3cf" stop-opacity=".25"/><stop offset="1" stop-color="#ffb3cf" stop-opacity="0"/></radialGradient>
+<path id="br-petal" d="M0 -7 C 6 -7, 9 1, 0 8 C -9 1, -6 -7, 0 -7 Z" fill="#ffd0e2"/>
+</defs>
+<rect width="600" height="200" fill="url(#br-bg)"/>
+<g fill="url(#br-bokeh)">
+<circle cx="80" cy="150" r="34"><animateTransform attributeName="transform" type="translate" values="0 0;10 -30;0 0" dur="11s" repeatCount="indefinite"/></circle>
+<circle cx="240" cy="60" r="22"><animateTransform attributeName="transform" type="translate" values="0 0;-14 20;0 0" dur="9s" repeatCount="indefinite"/></circle>
+<circle cx="380" cy="140" r="44"><animateTransform attributeName="transform" type="translate" values="0 0;16 -20;0 0" dur="13s" repeatCount="indefinite"/></circle>
+<circle cx="520" cy="50" r="28"><animateTransform attributeName="transform" type="translate" values="0 0;-10 24;0 0" dur="10s" repeatCount="indefinite"/></circle>
+<circle cx="170" cy="20" r="16"><animateTransform attributeName="transform" type="translate" values="0 0;12 18;0 0" dur="8s" repeatCount="indefinite"/></circle>
+</g>
+<use href="#br-petal"><animateMotion dur="9s" repeatCount="indefinite" rotate="auto" path="M-20 30 C 120 80, 200 10, 320 70 S 520 40, 640 110"/></use>
+<use href="#br-petal" transform="scale(.8)"><animateMotion dur="11s" begin="-4s" repeatCount="indefinite" rotate="auto" path="M-20 140 C 100 100, 220 170, 340 120 S 520 170, 640 120"/></use>
+<use href="#br-petal" transform="scale(1.2)"><animateMotion dur="13s" begin="-8s" repeatCount="indefinite" rotate="auto" path="M-20 90 C 140 40, 260 130, 380 80 S 540 30, 640 60"/></use>
+</svg>

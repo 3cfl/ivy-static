@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 200" width="600" height="200" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="be-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#120202"/><stop offset=".55" stop-color="#3d0808"/><stop offset="1" stop-color="#8a1a06"/></linearGradient>
+<linearGradient id="be-lava" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff5a1f"/><stop offset=".3" stop-color="#ffb02e"/><stop offset=".6" stop-color="#ff3d14"/><stop offset="1" stop-color="#ffc24a"/><animateTransform attributeName="gradientTransform" type="translate" values="0 0;1 0" dur="8s" repeatCount="indefinite"/></linearGradient>
+<filter id="be-heat" x="-10%" y="-50%" width="120%" height="200%"><feTurbulence type="fractalNoise" baseFrequency="0.02 0.08" numOctaves="2" seed="5" result="n"><animate attributeName="baseFrequency" values="0.02 0.08;0.03 0.11;0.02 0.08" dur="3s" repeatCount="indefinite"/></feTurbulence><feDisplacementMap in="SourceGraphic" in2="n" scale="14" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="d"/></feMerge></filter>
+<radialGradient id="be-spark" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff4c2"/><stop offset=".4" stop-color="#ffa53a"/><stop offset="1" stop-color="#ff3d14" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="600" height="200" fill="url(#be-bg)"/>
+<g filter="url(#be-heat)">
+<path d="M0 200 L0 160 C 60 150, 100 170, 160 156 C 220 142, 270 168, 330 154 C 390 140, 440 166, 500 152 C 550 142, 580 156, 600 150 L600 200 Z" fill="url(#be-lava)"/>
+<path d="M0 200 L0 176 C 80 168, 140 186, 220 176 C 300 166, 360 188, 440 176 C 510 166, 560 182, 600 176 L600 200 Z" fill="#ffd36b" opacity=".65"/>
+</g>
+<g fill="url(#be-spark)">
+<circle r="5"><animateMotion dur="4s" repeatCount="indefinite" path="M60 170 C 40 120, 80 80, 50 -10"/><animate attributeName="opacity" values="1;.4;1;0" dur="4s" repeatCount="indefinite"/></circle>
+<circle r="4"><animateMotion dur="5s" begin="-1.6s" repeatCount="indefinite" path="M180 160 C 200 110, 160 70, 190 -10"/><animate attributeName="opacity" values="1;.4;1;0" dur="5s" begin="-1.6s" repeatCount="indefinite"/></circle>
+<circle r="6"><animateMotion dur="4.6s" begin="-3s" repeatCount="indefinite" path="M300 160 C 280 110, 320 70, 296 -10"/><animate attributeName="opacity" values="1;.3;1;0" dur="4.6s" begin="-3s" repeatCount="indefinite"/></circle>
+<circle r="3.6"><animateMotion dur="3.8s" begin="-2.2s" repeatCount="indefinite" path="M420 160 C 440 110, 400 80, 426 -10"/><animate attributeName="opacity" values="1;.4;1;0" dur="3.8s" begin="-2.2s" repeatCount="indefinite"/></circle>
+<circle r="5"><animateMotion dur="5.4s" begin="-4s" repeatCount="indefinite" path="M540 160 C 520 120, 560 80, 536 -10"/><animate attributeName="opacity" values="1;.4;1;0" dur="5.4s" begin="-4s" repeatCount="indefinite"/></circle>
+<circle r="3"><animateMotion dur="4.2s" begin="-.8s" repeatCount="indefinite" path="M240 170 C 260 120, 224 90, 246 -10"/><animate attributeName="opacity" values="1;.5;1;0" dur="4.2s" begin="-.8s" repeatCount="indefinite"/></circle>
+</g>
+</svg>

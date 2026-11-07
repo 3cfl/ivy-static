@@ -1,0 +1,1 @@
+self.IvyStorage=Object.freeze({prepare:async()=>{}});

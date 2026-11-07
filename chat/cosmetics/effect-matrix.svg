@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 240 320" width="240" height="320" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="mx-tail" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22c55e" stop-opacity="0"/><stop offset=".85" stop-color="#4ade80" stop-opacity=".9"/><stop offset="1" stop-color="#f0fdf4"/></linearGradient>
+<filter id="mx-glow" x="-50%" y="-10%" width="200%" height="120%"><feGaussianBlur stdDeviation="1.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<text id="mx-col" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="url(#mx-tail)" writing-mode="tb" letter-spacing="2">ｱ7ｶ0ﾃ1ﾎ9ｷｦ4ﾇ2ﾅ8ﾓ</text>
+</defs>
+<g filter="url(#mx-glow)" opacity=".85">
+<use href="#mx-col" x="12"><animate attributeName="y" values="-260;340" dur="3.4s" repeatCount="indefinite"/></use>
+<use href="#mx-col" x="36"><animate attributeName="y" values="-260;340" dur="4.6s" begin="-2s" repeatCount="indefinite"/></use>
+<use href="#mx-col" x="60"><animate attributeName="y" values="-260;340" dur="3s" begin="-1.2s" repeatCount="indefinite"/></use>
+<use href="#mx-col" x="84"><animate attributeName="y" values="-260;340" dur="5.2s" begin="-3.4s" repeatCount="indefinite"/></use>
+<use href="#mx-col" x="108"><animate attributeName="y" values="-260;340" dur="3.8s" begin="-.4s" repeatCount="indefinite"/></use>
+<use href="#mx-col" x="132"><animate attributeName="y" values="-260;340" dur="4.2s" begin="-2.6s" repeatCount="indefinite"/></use>
+<use href="#mx-col" x="156"><animate attributeName="y" values="-260;340" dur="3.2s" begin="-1.8s" repeatCount="indefinite"/></use>
+<use href="#mx-col" x="180"><animate attributeName="y" values="-260;340" dur="4.8s" begin="-4s" repeatCount="indefinite"/></use>
+<use href="#mx-col" x="204"><animate attributeName="y" values="-260;340" dur="3.6s" begin="-.9s" repeatCount="indefinite"/></use>
+<use href="#mx-col" x="228"><animate attributeName="y" values="-260;340" dur="4.4s" begin="-3s" repeatCount="indefinite"/></use>
+</g>
+<g opacity=".35"><use href="#mx-col" x="24" transform="scale(.7)" style="transform-origin: 0 0"><animate attributeName="y" values="-260;480" dur="6s" begin="-1s" repeatCount="indefinite"/></use><use href="#mx-col" x="170" transform="scale(.7)"><animate attributeName="y" values="-260;480" dur="7s" begin="-4s" repeatCount="indefinite"/></use><use href="#mx-col" x="250" transform="scale(.7)"><animate attributeName="y" values="-260;480" dur="6.6s" begin="-2.4s" repeatCount="indefinite"/></use></g>
+</svg>

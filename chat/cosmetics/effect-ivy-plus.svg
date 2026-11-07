@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 240 320" width="240" height="320" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="pe-edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fcd34d"/><stop offset=".5" stop-color="#6ee7b7"/><stop offset="1" stop-color="#fcd34d"/><animateTransform attributeName="gradientTransform" type="rotate" values="0 .5 .5;360 .5 .5" dur="8s" repeatCount="indefinite"/></linearGradient>
+<linearGradient id="pe-ray" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff7d6" stop-opacity="0"/><stop offset=".5" stop-color="#fff7d6" stop-opacity=".14"/><stop offset="1" stop-color="#fff7d6" stop-opacity="0"/></linearGradient>
+<linearGradient id="pe-mist" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fcd34d" stop-opacity="0"/><stop offset="1" stop-color="#fcd34d" stop-opacity=".18"/></linearGradient>
+<linearGradient id="pe-gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff3c4"/><stop offset="1" stop-color="#f59e0b"/></linearGradient>
+<linearGradient id="pe-mint" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d1fae5"/><stop offset="1" stop-color="#10b981"/></linearGradient>
+<filter id="pe-glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="1.8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<path id="pe-leaf" d="M0 -7 C 6 -6, 8 1, 0 7 C -8 1, -6 -6, 0 -7 Z"/>
+<path id="pe-star" d="M0 -6 C .8 -1.5, 1.5 -.8, 6 0 C 1.5 .8, .8 1.5, 0 6 C -.8 1.5, -1.5 .8, -6 0 C -1.5 -.8, -.8 -1.5, 0 -6 Z" fill="#fff7d6"/>
+</defs>
+<rect x="2" y="2" width="236" height="316" rx="18" fill="none" stroke="url(#pe-edge)" stroke-width="2.4" filter="url(#pe-glow)"><animate attributeName="opacity" values=".55;1;.55" dur="3.6s" repeatCount="indefinite"/></rect>
+<rect x="-200" y="-40" width="120" height="420" fill="url(#pe-ray)" transform="rotate(22 120 160)"><animate attributeName="x" values="-200;-200;320" keyTimes="0;.5;1" dur="6.5s" repeatCount="indefinite"/></rect>
+<rect y="230" width="240" height="90" fill="url(#pe-mist)"><animate attributeName="opacity" values=".6;1;.6" dur="4s" repeatCount="indefinite"/></rect>
+<g filter="url(#pe-glow)">
+<use href="#pe-leaf" fill="url(#pe-gold)"><animateMotion dur="7s" repeatCount="indefinite" rotate="auto" path="M30 340 C 60 260, 0 200, 40 120 S 20 20, 50 -20"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="7s" repeatCount="indefinite"/></use>
+<use href="#pe-leaf" fill="url(#pe-mint)" transform="scale(.8)"><animateMotion dur="8s" begin="-3s" repeatCount="indefinite" rotate="auto" path="M130 340 C 100 260, 160 200, 120 120 S 150 30, 110 -20"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="8s" begin="-3s" repeatCount="indefinite"/></use>
+<use href="#pe-leaf" fill="url(#pe-gold)" transform="scale(1.15)"><animateMotion dur="9s" begin="-5.5s" repeatCount="indefinite" rotate="auto" path="M210 340 C 240 250, 180 190, 210 110 S 190 30, 220 -20"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="9s" begin="-5.5s" repeatCount="indefinite"/></use>
+<use href="#pe-leaf" fill="url(#pe-mint)" transform="scale(.6)"><animateMotion dur="6.5s" begin="-1.5s" repeatCount="indefinite" rotate="auto" path="M80 340 C 110 270, 60 210, 90 140 S 70 40, 95 -20"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="6.5s" begin="-1.5s" repeatCount="indefinite"/></use>
+<use href="#pe-leaf" fill="url(#pe-gold)" transform="scale(.7)"><animateMotion dur="7.5s" begin="-4.5s" repeatCount="indefinite" rotate="auto" path="M175 340 C 150 270, 200 200, 170 130 S 190 40, 165 -20"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="7.5s" begin="-4.5s" repeatCount="indefinite"/></use>
+<g transform="translate(40 70)"><use href="#pe-star"><animateTransform attributeName="transform" type="scale" values="0;1;0;0" keyTimes="0;.2;.45;1" dur="2.6s" repeatCount="indefinite"/></use></g>
+<g transform="translate(200 50)"><use href="#pe-star"><animateTransform attributeName="transform" type="scale" values="0;0;.8;0" keyTimes="0;.35;.6;.85" dur="3s" repeatCount="indefinite"/></use></g>
+<g transform="translate(190 210)"><use href="#pe-star"><animateTransform attributeName="transform" type="scale" values="0;.9;0;0" keyTimes="0;.25;.5;1" dur="2.8s" begin="-1.4s" repeatCount="indefinite"/></use></g>
+<g transform="translate(36 260)"><use href="#pe-star"><animateTransform attributeName="transform" type="scale" values="0;0;.7;0" keyTimes="0;.4;.65;.9" dur="3.4s" begin="-.6s" repeatCount="indefinite"/></use></g>
+</g>
+</svg>

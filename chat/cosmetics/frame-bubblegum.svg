@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 160" width="160" height="160">
+<defs>
+<linearGradient id="bg-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd1ec"/><stop offset=".5" stop-color="#ff6fb5"/><stop offset="1" stop-color="#c58bff"/><animateTransform attributeName="gradientTransform" type="rotate" values="0 .5 .5;360 .5 .5" dur="7s" repeatCount="indefinite"/></linearGradient>
+<radialGradient id="bg-b" cx=".32" cy=".28" r=".75"><stop offset="0" stop-color="#ffffff"/><stop offset=".25" stop-color="#ffe0f1"/><stop offset=".7" stop-color="#ff7fc0"/><stop offset="1" stop-color="#e0469a"/></radialGradient>
+<filter id="bg-glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<circle cx="80" cy="80" r="55.5" fill="none" stroke="url(#bg-g)" stroke-width="5.5" filter="url(#bg-glow)"/>
+<g><circle r="7" fill="url(#bg-b)"/><circle cx="-2.2" cy="-2.4" r="1.8" fill="#fff"/><animateMotion dur="9s" repeatCount="indefinite" path="M80 16 A64 64 0 1 1 79.9 16"/></g>
+<g><circle r="4.6" fill="url(#bg-b)"/><circle cx="-1.4" cy="-1.6" r="1.2" fill="#fff"/><animateMotion dur="9s" begin="-2.2s" repeatCount="indefinite" path="M80 16 A64 64 0 1 1 79.9 16"/></g>
+<g><circle r="3.2" fill="url(#bg-b)"/><animateMotion dur="9s" begin="-4.8s" repeatCount="indefinite" path="M80 16 A64 64 0 1 1 79.9 16"/></g>
+<g><circle r="5.4" fill="url(#bg-b)"/><circle cx="-1.6" cy="-1.8" r="1.4" fill="#fff"/><animateMotion dur="13s" begin="-6s" repeatCount="indefinite" path="M80 22 A58 58 0 1 0 80.1 22"/><animateTransform attributeName="transform" type="scale" values="1;1.15;1" additive="sum" dur="2.4s" repeatCount="indefinite"/></g>
+</svg>

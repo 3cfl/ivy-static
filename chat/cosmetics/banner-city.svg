@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 200" width="600" height="200" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="bc-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#05061a"/><stop offset=".7" stop-color="#2a1050"/><stop offset="1" stop-color="#7a1f6e"/></linearGradient>
+<filter id="bc-glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<pattern id="bc-win" width="10" height="12" patternUnits="userSpaceOnUse"><rect x="2" y="3" width="4" height="5" fill="#ffd27a" opacity=".85"/></pattern>
+<pattern id="bc-win2" width="10" height="12" patternUnits="userSpaceOnUse"><rect x="2" y="3" width="4" height="5" fill="#7dd3fc" opacity=".7"/></pattern>
+</defs>
+<rect width="600" height="200" fill="url(#bc-sky)"/>
+<g fill="#0b0b26">
+<rect x="10" y="90" width="50" height="110"/><rect x="70" y="60" width="40" height="140"/><rect x="120" y="100" width="56" height="100"/><rect x="186" y="40" width="44" height="160"/><rect x="240" y="80" width="60" height="120"/><rect x="310" y="54" width="38" height="146"/><rect x="356" y="96" width="52" height="104"/><rect x="418" y="30" width="46" height="170"/><rect x="474" y="76" width="58" height="124"/><rect x="540" y="58" width="50" height="142"/>
+</g>
+<g>
+<rect x="74" y="66" width="32" height="130" fill="url(#bc-win)"><animate attributeName="opacity" values="1;.6;1" dur="5s" repeatCount="indefinite"/></rect>
+<rect x="190" y="48" width="36" height="148" fill="url(#bc-win2)"><animate attributeName="opacity" values=".6;1;.6" dur="4s" repeatCount="indefinite"/></rect>
+<rect x="314" y="60" width="30" height="136" fill="url(#bc-win)"><animate attributeName="opacity" values="1;.5;1" dur="6s" repeatCount="indefinite"/></rect>
+<rect x="422" y="36" width="38" height="160" fill="url(#bc-win2)"><animate attributeName="opacity" values=".5;1;.5" dur="4.6s" repeatCount="indefinite"/></rect>
+<rect x="544" y="64" width="42" height="132" fill="url(#bc-win)"><animate attributeName="opacity" values=".8;.4;.8" dur="3.6s" repeatCount="indefinite"/></rect>
+</g>
+<g filter="url(#bc-glow)" fill="none" stroke-width="2.4" stroke-linecap="round">
+<path d="M190 36 H226" stroke="#ff2e93"><animate attributeName="opacity" values="1;.2;1;1" keyTimes="0;.1;.2;1" dur="3s" repeatCount="indefinite"/></path>
+<path d="M422 26 V12" stroke="#ff4d4d"><animate attributeName="opacity" values="1;0;1" dur="1.4s" repeatCount="indefinite"/></path>
+<path d="M244 76 H296" stroke="#22d3ee"/>
+<path d="M478 72 H528" stroke="#a855f7"><animate attributeName="opacity" values=".4;1;.4" dur="2.4s" repeatCount="indefinite"/></path>
+</g>
+<rect x="0" y="192" width="600" height="8" fill="#130a2e"/>
+<g filter="url(#bc-glow)"><rect y="194" width="10" height="2" rx="1" fill="#ffd27a"><animate attributeName="x" values="-20;620" dur="4s" repeatCount="indefinite"/></rect><rect y="196" width="10" height="2" rx="1" fill="#ff4d4d"><animate attributeName="x" values="620;-20" dur="5s" repeatCount="indefinite"/></rect></g>
+</svg>

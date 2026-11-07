@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 200" width="600" height="200" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="bk-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd6e6"/><stop offset=".6" stop-color="#ffeef5"/><stop offset="1" stop-color="#fff8e8"/></linearGradient>
+<radialGradient id="bk-bloom" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ff9cc4"/><stop offset=".6" stop-color="#ffc2da"/><stop offset="1" stop-color="#ffc2da" stop-opacity="0"/></radialGradient>
+<path id="bk-petal" d="M0 -6 C 5 -6, 8 1, 0 7 C -8 1, -5 -6, 0 -6 Z" fill="#ff9cc4"/>
+</defs>
+<rect width="600" height="200" fill="url(#bk-sky)"/>
+<circle cx="120" cy="200" r="120" fill="#ffd1e3" opacity=".6"/>
+<path d="M600 0 C 540 30, 520 60, 470 80 C 430 96, 400 90, 360 110 M520 46 C 500 20, 470 14, 440 20 M470 80 C 470 110, 490 130, 520 140" fill="none" stroke="#5b3a3a" stroke-width="6" stroke-linecap="round"/>
+<g fill="url(#bk-bloom)">
+<circle cx="560" cy="24" r="26"/><circle cx="500" cy="54" r="22"/><circle cx="440" cy="22" r="20"/><circle cx="460" cy="90" r="24"/><circle cx="380" cy="104" r="20"/><circle cx="520" cy="138" r="18"/><circle cx="590" cy="70" r="20"/>
+</g>
+<use href="#bk-petal"><animateMotion dur="8s" repeatCount="indefinite" rotate="auto" path="M520 40 C 420 80, 380 40, 280 100 S 120 120, -20 180"/><animate attributeName="opacity" values="0;1;1;0" dur="8s" repeatCount="indefinite"/></use>
+<use href="#bk-petal" transform="scale(.8)"><animateMotion dur="10s" begin="-3s" repeatCount="indefinite" rotate="auto" path="M460 90 C 360 120, 320 70, 220 130 S 80 150, -20 190"/><animate attributeName="opacity" values="0;1;1;0" dur="10s" begin="-3s" repeatCount="indefinite"/></use>
+<use href="#bk-petal" transform="scale(1.2)"><animateMotion dur="9s" begin="-6s" repeatCount="indefinite" rotate="auto" path="M580 70 C 480 60, 440 130, 340 120 S 160 70, -20 120"/><animate attributeName="opacity" values="0;1;1;0" dur="9s" begin="-6s" repeatCount="indefinite"/></use>
+<use href="#bk-petal"><animateMotion dur="11s" begin="-8s" repeatCount="indefinite" rotate="auto" path="M400 110 C 300 150, 260 100, 160 160 S 40 170, -20 200"/><animate attributeName="opacity" values="0;1;1;0" dur="11s" begin="-8s" repeatCount="indefinite"/></use>
+</svg>

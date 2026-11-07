@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 160" width="160" height="160">
+<defs>
+<linearGradient id="sk-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff1f7"/><stop offset=".5" stop-color="#f9a8d4"/><stop offset="1" stop-color="#db2777"/><animateTransform attributeName="gradientTransform" type="rotate" values="0 .5 .5;360 .5 .5" dur="9s" repeatCount="indefinite"/></linearGradient>
+<radialGradient id="sk-p" cx=".5" cy=".85" r=".9"><stop offset="0" stop-color="#ec4899"/><stop offset=".45" stop-color="#fbcfe8"/><stop offset="1" stop-color="#fff7fb"/></radialGradient>
+<g id="sk-flower"><ellipse cx="0" cy="-5" rx="3.6" ry="5.4" fill="url(#sk-p)"/><ellipse cx="0" cy="-5" rx="3.6" ry="5.4" fill="url(#sk-p)" transform="rotate(72)"/><ellipse cx="0" cy="-5" rx="3.6" ry="5.4" fill="url(#sk-p)" transform="rotate(144)"/><ellipse cx="0" cy="-5" rx="3.6" ry="5.4" fill="url(#sk-p)" transform="rotate(216)"/><ellipse cx="0" cy="-5" rx="3.6" ry="5.4" fill="url(#sk-p)" transform="rotate(288)"/><circle r="2" fill="#facc15"/></g>
+<path id="sk-petal" d="M0 -4 C 3 -4, 5 0, 0 5 C -5 0, -3 -4, 0 -4 Z" fill="#fbcfe8"/>
+</defs>
+<circle cx="80" cy="80" r="55.5" fill="none" stroke="url(#sk-g)" stroke-width="5"/>
+<path d="M14 64 C 24 40, 44 24, 66 20 M40 34 C 38 26, 40 20, 46 16" fill="none" stroke="#5b3a2e" stroke-width="3.4" stroke-linecap="round"/>
+<use href="#sk-flower" transform="translate(22 50)"><animateTransform attributeName="transform" type="scale" values="1;1.08;1" additive="sum" dur="3s" repeatCount="indefinite"/></use>
+<use href="#sk-flower" transform="translate(46 17) scale(.8)"/>
+<use href="#sk-flower" transform="translate(64 20) scale(1.1)"><animateTransform attributeName="transform" type="rotate" values="0;14;0" additive="sum" dur="5s" repeatCount="indefinite"/></use>
+<use href="#sk-flower" transform="translate(132 112) scale(.9)"/>
+<use href="#sk-petal"><animateMotion dur="6s" repeatCount="indefinite" rotate="auto" path="M60 22 C 90 40, 70 70, 110 92 S 120 140, 150 150"/><animate attributeName="opacity" values="0;1;1;0" dur="6s" repeatCount="indefinite"/></use>
+<use href="#sk-petal"><animateMotion dur="7s" begin="-3s" repeatCount="indefinite" rotate="auto" path="M24 52 C 10 80, 40 96, 20 124 S 40 150, 30 160"/><animate attributeName="opacity" values="0;1;1;0" dur="7s" begin="-3s" repeatCount="indefinite"/></use>
+<use href="#sk-petal" transform="scale(.8)"><animateMotion dur="8s" begin="-5s" repeatCount="indefinite" rotate="auto" path="M70 18 C 120 10, 150 40, 140 70 S 156 110, 146 140"/><animate attributeName="opacity" values="0;1;1;0" dur="8s" begin="-5s" repeatCount="indefinite"/></use>
+</svg>
