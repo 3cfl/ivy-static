@@ -15,8 +15,9 @@ app, loaded once through the bundled proxy into a shared frame with its own
 sidebar and toolbars hidden. They update whenever ivy.rest does. Settings sync
 back to this page. Payment pages open outside the proxy in a new tab.
 
-Proxy engines, WASM and transports are bundled locally. Edit wisp.json to change
-the ordered WebSocket Wisp server list.
+Proxy engines, WASM and transports are bundled locally. The relay list comes from
+the main repo first, then the local wisp.json, so updating the repo list reaches
+every copy. Blocked or dead relays are skipped automatically.
 
 This edition uses classic browser scripts, including transport and worker
 startup. No browser ES-module loader is needed for the bundled app. Websites
