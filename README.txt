@@ -7,6 +7,8 @@ base path automatically and uses hash navigation, with no SPA rewrite needed.
 Games load in an isolated iframe from https://games.ivy.rest/k/index.html, the
 same live library as ivy.rest, including the ivy, cloud, lumin, ugs and gn-math
 sources. Lumin and cloud games run on the hosted runner.
+If games.ivy.rest is unreachable, the library loads through the proxy instead.
+The lumin source is unavailable in that mode; the others keep working.
 
 AI, chat, billing, developers, links, settings and sign-in are the real ivy.rest
 app, loaded once through the bundled proxy into a shared frame with its own
