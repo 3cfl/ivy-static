@@ -2,9 +2,9 @@
   "apiBase": "https://ivy.rest",
   "gamesIframe": "https://games.ivy.rest/k/index.html",
   "games": "live ivy library: ivy, cloud, lumin, ugs, gn-math",
-  "proxyEngines": "bundled locally",
+  "browserEngines": "bundled locally",
   "hosting": "static HTTPS, relative paths, runtime base path, hash navigation",
-  "centralFeatures": "real ivy.rest app in one shared proxied frame with its chrome hidden",
+  "centralFeatures": "real ivy.rest app in one shared framed view with its chrome hidden",
   "scriptFormat": "classic scripts and classic worker/transport startup",
   "built": "2026-11-07",
   "entries": [

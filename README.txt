@@ -7,30 +7,30 @@ base path automatically and uses hash navigation, with no SPA rewrite needed.
 Games load in an isolated iframe from https://games.ivy.rest/k/index.html, the
 same live library as ivy.rest, including the ivy, cloud, lumin, ugs and gn-math
 sources. Lumin and cloud games run on the hosted runner.
-If games.ivy.rest is unreachable, the library loads through the proxy instead.
+If games.ivy.rest is unreachable, the library loads through the built-in browser instead.
 The lumin source is unavailable in that mode; the others keep working.
 
 AI, chat, billing, links, settings and sign-in are the real ivy.rest
-app, loaded once through the bundled proxy into a shared frame with its own
+app, loaded once through the built-in browser into a shared frame with its own
 sidebar and toolbars hidden. They update whenever ivy.rest does. Settings sync
-back to this page. Payment pages open outside the proxy in a new tab.
+back to this page. Payment pages open outside the browser view in a new tab.
 
-Proxy engines, WASM and transports are bundled locally. The relay list comes from
-the main repo first, then the local wisp.json, so updating the repo list reaches
+Browser engines, WASM and transports are bundled locally. The relay list comes from
+the main repo first, then the local relays.json, so updating the repo list reaches
 every copy. Blocked or dead relays are skipped automatically.
 
 This edition uses classic browser scripts, including transport and worker
 startup. No browser ES-module loader is needed for the bundled app. Websites
-opened through the proxy and the hosted games service can use their own
-modules. The proxy still uses bundled WASM.
+opened in the built-in browser and the hosted games service can use their own
+modules. The built-in browser still uses bundled WASM.
 
 Serve .js as JavaScript and .wasm as application/wasm. Service worker
 scope is this folder. Avoid blanket COEP=require-corp headers because they can
-block externally hosted games. HTTPS or localhost is required for the proxy.
+block externally hosted games. HTTPS or localhost is required for the built-in browser.
 
 Keep this folder structure intact. No Node process, npm install, private key,
 server source, account database or runtime secret is part of this deployment.
 Original dependency license notices are retained in licenses/.
 
-Google sign-in runs on this page, not inside the proxy, so this host must be
-listed in Firebase authorized domains. The proxy session then stays signed in.
+Google sign-in runs on this page, not inside the built-in browser, so this host must be
+listed in Firebase authorized domains. The browser session then stays signed in.

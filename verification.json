@@ -4,7 +4,7 @@
   "checked_in_chromium": [
     "index.html, index.xml, index.svg and folder URL at / and a nested path",
     "hash routes survive reload on each entry",
-    "atlas and scholar load example.com and en.wikipedia.org through public wisp from each entry at a nested path",
+    "atlas and scholar load example.com and en.wikipedia.org through public relays from each entry at a nested path",
     "service worker scope and engine prefixes follow the nested path",
     "hosted games library, ai reply and central chat tab",
     "shared ivy frame: chat, ai, settings, billing, login, games from ivy, cloud and lumin sources"
